@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AnkaGenius</string>
+    <string name="title_activity_saving_activity">saving_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">İlk parça</string>
+    <string name="second_fragment_label">İkinci parça</string>
+    <string name="next">İleri</string>
+    <string name="previous">Geri</string>
+
+    <string name="hello_first_fragment">Merhaba ilk parça</string>
+    <string name="hello_second_fragment">Merhaba ikinci parça. Arg: %1$s</string>
+    <string name="setting">Ayar</string>
+    <string name="instruction">Bilgilendirme</string>
+    <string name="news">Haberler</string>
+    <string name="choose_buttons">Casus Detektörü</string>
+    <string name="instructions">Bilgilendirmeler</string>
+    <string name="settings">Ayarlar</string>
+    <string name="textwarn">İzin gerekli</string>
+</resources>

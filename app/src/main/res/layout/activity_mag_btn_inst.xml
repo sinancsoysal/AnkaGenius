@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bathroom">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="Detaylı Kılavuz"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:background="@color/lightGray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:text="Kadınların kullandığı çeşitli halka açık yerlere gizli kameraların yerleştirilmesi bunlardan biri oldu.
+kadınların kendine saygısı ve haysiyetiyle ilgili en büyük tahribat sorunlarından biridir.
+
+Yani, ladyBuddy'nin bu özelliği, kadınların her yerde gizli kameraları tespit etmesine yardımcı olur.\n\nGizli kamera türleri :-\n\n1. IR ışınları yayan gizli kameralar :-\n\nTelefonunuzun gece görüşlü kamerası bu ışınların yanıp sönmesini biz TV'nin uzaktan kumandasını test ettiğimiz gibi algılayabilir. \n\n2. Gelişmiş Elektronik Gizli kameralar :-\n\nBu kameralar IR ışınları yaymazlar, ancak bunlar elektronik kameralar olduğu için Elektromanyetik radyasyon yayarlar.\n\nVe telefonunuzun manyetometre sensörünün yardımıyla size yardımcı olacak bir simülasyon geliştirdik. herhangi bir elektronik cihazı tespit edin. \nAncak gizli kameralar çoğunlukla elektronik cihaz kullanımının gerekli olmadığı yerlerde kurulduğundan. \nDolayısıyla, bu yerlerde herhangi bir elektronik cihazı tespit etmek, casus kamera kurulumu şansını sağlar.
+
+\nŞüpheli tüm yerleri telefonunuzla hareket ettirin ve tarayın ve herhangi bir gizli kamera varsa AnkaGenius bip sesi çıkarmaya başlar. Telefonun şüpheli bölgeye çok yakın olduğundan emin olun.\n\n"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

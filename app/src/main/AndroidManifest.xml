@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ankabeta.ankagenius">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ankabeta.ankagenius.AboutUs"
+            android:exported="true"
+            android:label="Hakkımızda"
+            android:parentActivityName="com.ankabeta.ankagenius.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.ankabeta.ankagenius.MagBtnInst"
+            android:exported="true"
+            android:label="Detaylı Kılavuz"
+            android:parentActivityName="com.ankabeta.ankagenius.Magnetometer"
+            android:theme="@style/Theme.New"/>
+        <activity
+            android:name="com.ankabeta.ankagenius.SosInsructionsActivity"
+            android:exported="true"
+            android:label="SOS Kılavuzu"
+            android:parentActivityName="com.ankabeta.ankagenius.SmsActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.ankabeta.ankagenius.Magnetometer"
+            android:exported="true"
+            android:label="Gizli Kamera Detektörü"
+            android:parentActivityName="com.ankabeta.ankagenius.ChoosenActivity"
+            android:theme="@style/Theme.New" />/>
+        <activity
+            android:name="com.ankabeta.ankagenius.MagnoInst"
+            android:exported="true"
+            android:label="Manual Detektör"
+            android:parentActivityName="com.ankabeta.ankagenius.ChoosenActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.ankabeta.ankagenius.Outside"
+            android:exported="true"
+            android:label="Sokak Kılavuzu"
+            android:parentActivityName="com.ankabeta.ankagenius.MagnoInst"
+            android:theme="@style/Theme.New"/>
+        <activity
+            android:name="com.ankabeta.ankagenius.ChangingRoom"
+            android:exported="true"
+            android:label="Deneme Odası Kılavuzu"
+            android:parentActivityName="com.ankabeta.ankagenius.MagnoInst"
+            android:theme="@style/Theme.New"/>
+        <activity
+            android:name="com.ankabeta.ankagenius.Bedroom"
+            android:exported="true"
+            android:label="Yatak Odası Kılavuzu"
+            android:parentActivityName="com.ankabeta.ankagenius.MagnoInst"
+            android:theme="@style/Theme.New"/>
+        <activity
+            android:name="com.ankabeta.ankagenius.Bathroom"
+            android:exported="true"
+            android:label="Banyo Kılavuzu"
+            android:parentActivityName="com.ankabeta.ankagenius.MagnoInst"
+            android:theme="@style/Theme.New"/>
+        <activity
+            android:name="com.ankabeta.ankagenius.ChoosenActivity"
+            android:exported="true"
+            android:label="Gizli Kameraları Bul"
+            android:parentActivityName="com.ankabeta.ankagenius.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.ankabeta.ankagenius.NewsActivity"
+            android:exported="true"
+            android:label="Kadınlardan Haberler"
+            android:parentActivityName="com.ankabeta.ankagenius.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.ankabeta.ankagenius.Instructions"
+            android:label="Uygulama Turu"
+            android:parentActivityName="com.ankabeta.ankagenius.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.ankabeta.ankagenius.webactivity" />
+        <activity
+            android:name="com.ankabeta.ankagenius.SmsActivity"
+            android:label="Acil Servis"
+            android:parentActivityName="com.ankabeta.ankagenius.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.ankabeta.ankagenius.CurrentLocation" />
+        <activity android:name="com.ankabeta.ankagenius.Flashing" />
+        <activity android:name="com.ankabeta.ankagenius.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ankabeta.ankagenius.MainActivity" />
+
+        <receiver android:name="com.ankabeta.ankagenius.ScreenOnOffReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="number.action.string" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.ankabeta.ankagenius.ScreenOnOffBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

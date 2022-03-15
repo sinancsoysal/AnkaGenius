@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bathroom">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="INSTRUCTIONS for Emergency Service"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:background="@color/lightGray">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:text="Adım 1:- Akrabalarınızın maksimum dört irtibat numarasını kaydedin.\n\nAdım 2:- SOS'un işlevselliğini test etmek için DENEYİN düğmesine dokunun.\n\nAdım 3:- Uygulama, herkese canlı konumunuzla birlikte SMS gönderecektir. dört
+numaralar ve ilk numaraya telefon görüşmesi yapın. Canlı konum bir bağlantı olmayacak, bunun yerine boylam, enlem ve bulunduğunuz yerin tam yeri olacaktır, böylece akrabalarınız internet bağlantısı olmasa bile işlem yapabilir.\n\nAdım 4:- Şimdi , AnkaGenius acil durumlarda size yardım etmeye hazır.\n\nAcil durumlarda AnkaGenius'yi nasıl kullanacağınızı görelim:-\n\nAdım 1:- Güvenli olmayan herhangi bir yerden geçtiğinizde, uygulamayı açın ve geri veya ana sayfa düğmesine basın böylece uygulama arka planda çalışmaya başlar.\n\nAdım 2:- Uygulamanın arka planda çalıştığından, yani sistem tepsisinde olduğundan emin olun.\n\nAdım 3:- Acil bir durum hissettiğinizde, güç düğmesine dokunarak üç kez Acil durum mesajı gönderir ve çağrı gönderir, üç kez tekrar dokunmak suçluyu saptırmak için bir siren başlatır.\n\nAdım 4:- Tüm bu 6 kez dokunmanın bir dakika içinde olduğundan emin olun, aksi takdirde yeniden başlatmanız gerekir sıfırdan dokunma sayısı.\n\n5. Adım:- Güç düğmesine tekrar üç kez dokunmak veya uygulamayı arka planda kapatmak sireni durduruyorum.\n\nNot: - Güç düğmesine dokunmanın ekranın kapanacağı veya açılacağı anlamına geldiğinden emin olun"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bathroom">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="15dp"
+                android:text="Banyoda bir gizli kameranının bulunma olasılığı: 12%. \n\nAşağıdaki konumları aramalısınız: \n\n1. Su ısıtıcı - \nÖnlem: Gücünü kesin. \n\n2. Ayna - \nÖnlem: Aynaya dokun, parmağın ve yansıması arasında uzaklık fazla mı? Evetse, ayna camının arkasında bir kamera olabilir. \n\n3. Duman detektörü - \nÖnlem: Duman detektörünün üzerine bant yapıştır. \n\n4. Ampuller - \nÖnlem: Bunlar hakkında çok fazla bir önlem alamazsın, sadec perdelerini çektiğinden emin ol."
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
